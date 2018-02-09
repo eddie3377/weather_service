@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <title>Current Weather Information</title>
+</head>
+
+<body>
+    <div id="image"></div>
+    <div class="logo"><img src="images/pws-wu-logo.png" alt="logo" width="100%"></div>
+
+    <!--cloud-->
+    <div class="icon cloudy">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+    </div>
+    <!---->
+    <div class="title">
+        <h1>Where is <span class="italic">Your</span> Weather?</h1>
+    </div>
+    <div>
+        <span id="error"></span>
+    </div>
+    <div id="rowDiv" class="search row form-group form-inline">
+        <input type="text" name="city" id="city" class="form-control" placeholder="e.g., Barcelona"><button id="submitWeather" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Search</button>
+    </div>
+    <div id="show"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
